@@ -1,0 +1,74 @@
+name: Friends
+
+on:
+  push:
+    branches:
+    - master
+  workflow_dispatch:
+jobs:
+  deploy:
+    name: Deploy Hexo Public To Pages
+    runs-on: ubuntu-latest
+    env:
+      TZ: Asia/Shanghai
+    steps:
+    - name: Checkout Repository master branch
+      uses: actions/checkout@master
+      with:
+        submodules: "true"
+    - name: Setup Node.js 10.x
+      uses: actions/setup-node@master
+      with:
+        node-version: "10.x"
+    - name: Friends Gallery
+      env:
+        G_TOKEN: ${{ secrets.G_TOKEN }}
+      run: |
+       curl   -X POST   -H "Authorization: token $G_TOKEN"   -H "Accept: application/vnd.github.v3+json"   https://api.github.com/repos/MHG-LAB/friends-gallery/actions/workflows/5825125/dispatches   -d '{"ref":"master"}'
+    - name: Setup Deploy Private Key
+      env:
+        DEPLOY_KEY: ${{ secrets.TOKEN }}
+        NAME: ${{ secrets.NAME }}
+        EMAIL: ${{ secrets.EMAIL }}
+      run: |
+        mkdir -p ~/.ssh/
+        echo "$DEPLOY_KEY" > ~/.ssh/id_rsa 
+        chmod 600 ~/.ssh/id_rsa
+        ssh-keyscan github.com >> ~/.ssh/known_hosts
+        git config --global user.email "$EMAIL"
+        git config --global user.name "$NAME"
+    - name: Clone
+      run: |
+        git clone git@github.com:MHuiG/blog-source
+        rm -rf ./blog-source/source/_data/friends.yml
+        mv ./friends.yml ./blog-source/source/_data/
+    - name: Install Globel Dependencies
+      run: |
+        npm install hexo-cli -g
+    - name: Cache node modules
+      uses: actions/cache@v1
+      id: cache
+      with:
+        path: node_modules
+        key: ${{ runner.os }}-node-${{ hashFiles('**/package-lock.json') }}
+        restore-keys: |
+          ${{ runner.os }}-node-
+    - name: Install Dependencies
+      if: steps.cache.outputs.cache-hit != 'true'
+      run: |
+        cd blog-source
+        npm install
+    - name: Generate Public Files
+      run: |
+        cd blog-source
+        npm run start
+
+    - name: Deploy Github
+      uses: peaceiris/actions-gh-pages@v3
+      with:
+        deploy_key: ${{ secrets.TOKEN }}
+        publish_dir: ./blog-source/public
+        user_name: 'github-actions[bot]'
+        user_email: 'github-actions[bot]@users.noreply.github.com'
+        external_repository: MHuiG/MHuiG.github.io
+        publish_branch: master

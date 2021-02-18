@@ -1,0 +1,101 @@
+- group:  <i class="fad fa-handshake fa-fw" aria-hidden="true"></i> Thanks
+  description: '本博客是在以下框架技术和开源服务的支持下搭建起来的:'
+  items:
+  - title: Hexo
+    avatar: https://cdn.jsdelivr.net/gh/MHuiG/imgbed/data/Hexo.png
+    url: https://hexo.io
+    backgroundColor: '#0e83cd'
+    textColor: '#fff'
+    description: 快速、简洁且高效的博客框架
+  - title: Volantis
+    avatar: https://cdn.jsdelivr.net/gh/volantis-x/cdn-org/blog/favicon/favicon-32x32.png
+    url: https://volantis.js.org
+    backgroundColor: '#2196f3'
+    textColor: '#fff'
+    description: A Wonderful Theme for Hexo
+  - title: Github
+    avatar: https://github.githubassets.com/pinned-octocat.svg
+    url: https://github.com/about
+    backgroundColor: '#000'
+    textColor: '#fff'
+    description: How People Build Software
+  - title: Unsplash
+    avatar: https://unsplash.com/assets/core/logo-black-df2168ed0c378fa5506b1816e75eb379d06cfcd0af01e07a2eb813ae9b5d7405.svg
+    url: https://unsplash.com
+    backgroundColor: '#000'
+    textColor: '#fff'
+    description: Beautiful Free Images
+  - title: jsDelivr
+    avatar: https://cdn.jsdelivr.net/gh/MHuiG/imgbed/data/jsdelivr.png
+    url: https://www.jsdelivr.com
+    backgroundColor: '#ff5627'
+    textColor: '#fff'
+    description: Free & Fast Open Source CDN
+  - title: Vercel
+    avatar: https://assets.vercel.com/image/upload/q_auto/front/favicon/vercel/57x57.png
+    url: https://vercel.com
+    backgroundColor: '#000'
+    textColor: '#fff'
+    description: Develop. Preview. Ship.
+  - title: cloudflare
+    avatar: https://www.cloudflare.com/favicon.ico
+    url: https://www.cloudflare.com
+    backgroundColor: '#f48120'
+    textColor: '#fff'
+    description: 网络安全性、性能和可靠性提供完整的解决方案
+- group: <i class="fad fa-users fa-fw" aria-hidden="true"></i> Friends
+  description: 
+  items:
+  - title: xaoxuu
+    avatar: https://cdn.jsdelivr.net/gh/xaoxuu/cdn-assets/avatar/avatar.png
+    url: https://xaoxuu.com
+    backgroundColor: '#87977f'
+    textColor: '#efefef'
+    keywords:
+    - iOS
+    - Volantis
+    description: 如果宇宙间真有什么终极的逻辑，那就是终有一天我们会在舰桥上重逢，直到生命的终结。
+  - title: Linhk
+    avatar: https://avatars2.githubusercontent.com/u/50829219?s=60&v=4
+    url: https://reqwey.vercel.app
+    backgroundColor: '#ffebd2'
+    textColor: '#985B40'
+    keywords:
+    - OIer
+    - Qt
+    description: MAY THE FORCE BE WITH YOU
+  - title: 枋柚梓
+    avatar: https://avatars1.githubusercontent.com/u/31947043?s=400&v=4
+    url: https://inkss.cn
+    backgroundColor: '#101115'
+    textColor: '#e3e3e3'
+    keywords:
+    - 喵喵喵？
+    description: 繁星永存，记忆亘古不变。
+  - title: Flexiston
+    avatar: https://cdn.jsdelivr.net/gh/Flexiston/CDN/img/avatar.png
+    url: https://blog.flesx.cn
+    backgroundColor: '#ea736a'
+    textColor: '#fff'
+    description: 长风破浪会有时, 直挂云帆济沧海
+  - title: FANTASY
+    avatar: https://secure.gravatar.com/avatar/73ad73700166631e25f82f304080ebe3
+    url: https://blog.tigerxly.com
+    keywords:
+    - 二次元
+    - 菜得抠脚
+    backgroundColor: '#c99588'
+    textColor: '#fff'
+    description: 记录学习、生活的小站
+  - title: By_xb
+    avatar: https://cdn.jsdelivr.net/gh/byxiaobian/CDN/images/actor.jpg
+    url: https://wtnl.xyz
+    backgroundColor: '#000'
+    textColor: '#fff'
+    description: 努力做一个有用的人 ! 
+  - title: W4J1e
+    avatar: https://gitee.com/W4j1e/pic/raw/master/img/dl2.png
+    url: https://www.hin.cool
+    backgroundColor: '#2196f3'
+    textColor: '#fff'
+    description: 总是偏爱不务正业
