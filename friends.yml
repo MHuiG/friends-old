@@ -44,7 +44,7 @@
     textColor: '#fff'
     description: 网络安全性、性能和可靠性提供完整的解决方案
 - group: <i class="fad fa-users fa-fw" aria-hidden="true"></i> Friends
-  description: 
+  description: '小伙伴们:'
   items:
   - title: xaoxuu
     avatar: https://cdn.jsdelivr.net/gh/xaoxuu/cdn-assets/avatar/avatar.png
@@ -72,14 +72,8 @@
     keywords:
     - 喵喵喵？
     description: 繁星永存，记忆亘古不变。
-  - title: Flexiston
-    avatar: https://cdn.jsdelivr.net/gh/Flexiston/CDN/img/avatar.png
-    url: https://blog.flesx.cn
-    backgroundColor: '#ea736a'
-    textColor: '#fff'
-    description: 长风破浪会有时, 直挂云帆济沧海
   - title: FANTASY
-    avatar: https://secure.gravatar.com/avatar/73ad73700166631e25f82f304080ebe3
+    avatar: https://sdn.geekzu.org/avatar/73ad73700166631e25f82f304080ebe3
     url: https://blog.tigerxly.com
     keywords:
     - 二次元
@@ -99,3 +93,15 @@
     backgroundColor: '#2196f3'
     textColor: '#fff'
     description: 总是偏爱不务正业
+
+
+
+- group:  <i class="fad fa-bug fa-fw" aria-hidden="true"></i> Error
+  description: '异常数据或不安全的连接:'
+  items:
+  - title: Flexiston
+    avatar: https://cdn.jsdelivr.net/gh/Flexiston/CDN/img/avatar.png
+    url: https://blog.flesx.cn
+    backgroundColor: '#ea736a'
+    textColor: '#fff'
+    description: 长风破浪会有时, 直挂云帆济沧海
