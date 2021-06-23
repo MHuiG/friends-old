@@ -39,7 +39,7 @@ jobs:
         git config --global user.name "$NAME"
     - name: Clone
       run: |
-        git clone git@github.com:MHuiG/blog-source
+        git clone --recursive git@github.com:MHuiG/blog-source
         rm -rf ./blog-source/source/_data/friends.yml
         mv ./friends.yml ./blog-source/source/_data/
     - name: Install Globel Dependencies
